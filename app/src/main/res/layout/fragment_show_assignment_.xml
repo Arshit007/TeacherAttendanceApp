@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/btnred"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_show_spec"
+        android:background="@color/blue"
+        android:layout_width="wrap_content"
+        android:text="See By Specialisation"
+
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spinner_show_spec"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/txt_show_spec"
+        android:text="See By Specialisation"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/txt_show_sem"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/txt_show_spec"
+            android:text="See By Semester"
+            android:background="@color/btn_login"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinner_show_sem"
+            android:layout_width="match_parent"
+
+            android:layout_below="@id/txt_show_spec"
+            android:layout_toRightOf="@+id/txt_show_sem"
+            android:text="See By Specialisation"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_below="@id/txt_show_sem"
+            android:textAlignment="center"
+            android:id="@+id/txt_show_course"
+            android:layout_width="wrap_content"
+            android:text="See By Course"
+            android:background="@color/purple"
+            android:padding="10dp"
+
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinner_show_course"
+            android:layout_width="match_parent"
+
+            android:layout_below="@id/txt_show_sem"
+            android:layout_toRightOf="@+id/txt_show_course"
+            android:text="See By Specialisation"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_show_assignment_teacher"
+           android:background="@color/button_selectorcolor"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

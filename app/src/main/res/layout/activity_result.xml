@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:id="@+id/relative">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_result"
+        android:layout_below="@id/user_toolbar"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:text="Submit Result"
+        android:id="@+id/btn_submit_result"
+        android:background="@color/btnred"
+        android:textColor="@color/fbutton_color_clouds"
+        android:shadowColor="@color/fbutton_color_asbestos"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>

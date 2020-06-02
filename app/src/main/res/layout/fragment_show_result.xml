@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/relative">
+
+
+
+    <RelativeLayout
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:background="@color/pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:text="Select Specialisation"
+            android:textSize="30dp"
+            />
+
+        <Spinner
+            android:layout_below="@id/txt1"
+            android:padding="10dp"
+            android:id="@+id/spinner_spec1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+
+        <TextView
+            android:id="@+id/txt11"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+android:background="@color/yellow"
+            android:layout_below="@id/spinner_spec1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Select Semester"
+            android:textSize="30dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_sem1"
+            android:layout_width="match_parent"
+
+            android:padding="10dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt11" />
+
+
+        <TextView
+            android:id="@+id/txt22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@id/spinner_sem1"
+            android:background="@color/purple"
+
+            android:padding="10dp"
+            android:text="Select Course"
+            android:textSize="30dp"
+            />
+
+        <Spinner
+
+            android:layout_below="@id/txt22"
+            android:id="@+id/spinner_course1"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/show_rv_result"
+        android:orientation="horizontal"
+        android:layout_below="@id/spinner_course1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
